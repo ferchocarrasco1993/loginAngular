@@ -1,0 +1,36 @@
+<main>
+  <div class="login">
+    <div class="container1">
+      <img src="https://cdnblog.arcadina.net/wp-content/uploads/2018/02/BancosIm%C3%A1genes-cierre.jpg" />
+    </div>
+    <div class="container2">
+      <mat-icon class="icon-login" color="primary">account_circle</mat-icon>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <div class="container-buttons-login">
+        <div class="links-container-login">
+          <p><a href="">He olvidado mi contraseña</a></p>
+          <p><a href ="/signup">Registrarme</a></p>
+        </div>
+        <button class="button-login" mat-raised-button color="primary">Log in</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<router-outlet></router-outlet>
+
+
