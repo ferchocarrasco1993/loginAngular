@@ -14,10 +14,12 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { ForgetComponent } from './forget/forget.component';
 
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'forget', component: ForgetComponent }
 ];
 
 @NgModule({
@@ -26,6 +28,7 @@ const routes: Routes = [
     ToolbarComponent,
     LoginComponent,
     SignupComponent,
+    ForgetComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,8 +45,6 @@ const routes: Routes = [
   ],
 
   providers: [],
-  bootstrap: [AppComponent, 
-              ToolbarComponent,
-              LoginComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

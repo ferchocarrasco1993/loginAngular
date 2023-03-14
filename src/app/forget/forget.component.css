@@ -1,0 +1,37 @@
+main {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/895/305/non_2x/abstract-gradient-background-with-green-and-blue-colors-gradient-backgrounds-for-wallpapers-posters-flyers-banners-flyers-and-more-free-vector.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .forget {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    display: block;
+    text-align: center;
+    padding: 1.5%;
+    margin: 50px;
+    width: auto;
+    height: 200px;
+    background-color: greenyellow;
+    border-radius: 2%;
+  }
+
+  .email-container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 300px;
+  }
+
+  .button-container{
+    width: 100%;
+    text-align: right;
+  }
+
+  
+
