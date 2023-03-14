@@ -1,31 +1,59 @@
 <main>
     <div class="signup">
-      <div class="container">
-        <mat-icon class="icon-login" color="primary">account_circle</mat-icon>
-        <div class="container-field">
-        <mat-form-field appearance="fill">
-          <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" required>
-          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-  
-        <mat-form-field appearance="fill">
-          <mat-label>Enter your password</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'">
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide" required>
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
-        </mat-form-field>
+        <div class="container">
+            <mat-icon class="icon-login" color="primary">account_circle</mat-icon>
+            <div class="container-field">
+                <div class="row1">
+                    <mat-form-field appearance="fill">
+                        <mat-label>NIF/CIF/NIE</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" required="">
+                    </mat-form-field>
+                </div>
 
-        <mat-form-field appearance="fill">
-          <mat-label>Enter your name</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'" required="">
-        </mat-form-field>
+                <div class="row2">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your email</mat-label>
+                        <input matInput placeholder="pat@example.com" required>
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide" required>
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+                <div class="row3">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your name</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your last name</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your surnames</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+
+                </div>
+                <div class="row4">
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter a number phone</mat-label>
+                        <input matInput type="text" required>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <button class="button-login" mat-raised-button color="primary">Sign up</button>
+
+        </div>
     </div>
-       
-        <button class="button-login" mat-raised-button color="primary">Sign up</button>
-       
-      </div>
-    </div>
-  </main>
+</main>

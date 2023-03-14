@@ -1,8 +1,8 @@
 main {
     background-image: url(https://static.vecteezy.com/system/resources/previews/006/895/305/non_2x/abstract-gradient-background-with-green-and-blue-colors-gradient-backgrounds-for-wallpapers-posters-flyers-banners-flyers-and-more-free-vector.jpg);
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .signup {
@@ -14,16 +14,13 @@ main {
 }
 
 .icon-login {
-    display: block;
     margin: 50px 50px;
     font-size: 200px;
     width: auto;
     height: auto;
-
 }
 
 .container {
-    display: block;
     width: 80%;
     height: auto;
     padding: 0 1.5%;
@@ -31,18 +28,21 @@ main {
 }
 
 .container-field {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     height: auto;
     width: auto;
 }
 
 mat-form-field {
     width: 30%;
+    margin: 10px;
 }
 
 .container > button {
     width: auto;
-    margin: 3%;
+    margin: 10px;
 }
+
+.row1, .row2, .row3, .row4 {
+    display: flex;
+}
+
