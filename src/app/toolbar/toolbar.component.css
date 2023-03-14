@@ -1,3 +1,8 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+a:active,a:link,a:visited {
+  text-decoration: none;
+  color:white;
+}
